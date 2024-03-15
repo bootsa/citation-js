@@ -11,13 +11,11 @@
     "conventional-changelog-cli": "^4.1.0",
     "expect.js": "^0.3.1",
     "jsdoc": "^4.0.0",
-    "lerna": "^5.1.8",
+    "lerna": "^8.1.2",
     "mocha": "^10.0.0",
     "mock-require": "^3.0.3",
-    "node-fetch": "^2.6.7",
     "nyc": "^15.1.0",
-    "standard": "^17.0.0",
-    "wikidata-sdk": "^8.0.0"
+    "standard": "^17.0.0"
   },
   "scripts": {
     "babel": "lerna exec --parallel -- babel src -d lib --copy-files",
@@ -38,5 +36,8 @@
   },
   "standard": {
     "parser": "@babel/eslint-parser"
+  },
+  "dependencies": {
+    "wikibase-sdk": "^10.0.2"
   }
 }

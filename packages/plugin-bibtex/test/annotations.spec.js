@@ -1,12 +1,12 @@
 /* eslint-env mocha */
 
-const assert = require('assert')
+import assert from "node:assert"
 const { plugins } = require('@citation-js/core')
 
-const { parse: parseFile } = require('../src/input/file.js')
-const { format: formatFile } = require('../src/output/bibtex.js')
-const { parseAnnotation } = require('../src/input/value.js')
-const { formatAnnotation } = require('../src/output/value.js')
+import { parse: parseFile } from "../src/input/file.js"
+import { format: formatFile } from "../src/output/bibtex.js"
+import { parseAnnotation } from "../src/input/value.js"
+import { formatAnnotation } from "../src/output/value.js"
 
 const dict = plugins.dict.get('text')
 

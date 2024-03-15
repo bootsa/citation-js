@@ -1,5 +1,5 @@
-import wdk from 'wikidata-sdk'
-import config from './config.json'
+import wdk from "wikibase-sdk/wikidata.org";
+import config from "./config.json";
 
 /**
  * Get Wikidata JSON from Wikidata IDs
@@ -13,20 +13,17 @@ import config from './config.json'
  *
  * @return {Object} Wikidata JSON
  */
-function parseWikidata (data, langs) {
-  const ids = Array.isArray(data) ? data : [data]
+function parseWikidata(data, langs) {
+	const ids = Array.isArray(data) ? data : [data];
 
-  for (const id of ids) {
-    if (!/^Q[1-9][0-9]*$/.test(id)) {
-      throw new Error(`Entity "${id}" not found`)
-    }
-  }
+	for (const id of ids) {
+		if (!/^Q[1-9][0-9]*$/.test(id)) {
+			throw new Error(`Entity "${id}" not found`);
+		}
+	}
 
-  const urls = wdk.getManyEntities(ids, langs || config.langs)
-  return Array.isArray(urls) ? urls : [urls]
+	const urls = wdk.getManyEntities(ids, langs || config.langs);
+	return Array.isArray(urls) ? urls : [urls];
 }
 
-export {
-  parseWikidata as parse,
-  parseWikidata as default
-}
+export { parseWikidata as parse, parseWikidata as default };
