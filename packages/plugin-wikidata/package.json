@@ -39,9 +39,9 @@
     "@citation-js/name": "^0.4.2"
   },
   "devDependencies": {
-    "@citation-js/core": "^0.7.9"
+    "@citation-js/core": "workspace:*"
   },
   "peerDependencies": {
-    "@citation-js/core": "^0.7.0"
+    "@citation-js/core": "workspace:*"
   }
 }

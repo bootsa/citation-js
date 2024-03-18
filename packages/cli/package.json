@@ -36,13 +36,13 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@citation-js/core": "^0.7.9",
-    "@citation-js/plugin-bibjson": "^0.7.9",
-    "@citation-js/plugin-bibtex": "^0.7.9",
-    "@citation-js/plugin-csl": "^0.7.9",
-    "@citation-js/plugin-doi": "^0.7.9",
-    "@citation-js/plugin-ris": "^0.7.9",
-    "@citation-js/plugin-wikidata": "^0.7.9",
+    "@citation-js/core": "workspace:*",
+    "@citation-js/plugin-bibjson": "workspace:*",
+    "@citation-js/plugin-bibtex": "workspace:*",
+    "@citation-js/plugin-csl": "workspace:*",
+    "@citation-js/plugin-doi": "workspace:*",
+    "@citation-js/plugin-ris": "workspace:*",
+    "@citation-js/plugin-wikidata": "workspace:*",
     "commander": "^12.0.0"
   }
 }

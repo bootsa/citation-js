@@ -41,9 +41,9 @@
     "moo": "^0.5.1"
   },
   "devDependencies": {
-    "@citation-js/core": "^0.7.9"
+    "@citation-js/core": "workspace:*"
   },
   "peerDependencies": {
-    "@citation-js/core": "^0.7.0"
+    "@citation-js/core": "workspace:*"
   }
 }
