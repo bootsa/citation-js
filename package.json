@@ -15,7 +15,8 @@
     "mocha": "^10.0.0",
     "mock-require": "^3.0.3",
     "nyc": "^15.1.0",
-    "standard": "^17.0.0"
+    "standard": "^17.0.0",
+    "wikibase-sdk": "^10.0.2"
   },
   "scripts": {
     "babel": "lerna exec --parallel -- babel src -d lib --copy-files",
@@ -36,8 +37,5 @@
   },
   "standard": {
     "parser": "@babel/eslint-parser"
-  },
-  "dependencies": {
-    "wikibase-sdk": "^10.0.2"
   }
 }
