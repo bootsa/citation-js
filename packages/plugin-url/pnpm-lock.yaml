@@ -1,0 +1,10 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  '@citation-js/core':
+    specifier: ^0.7.9
+    version: link:../core
